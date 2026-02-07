@@ -5,10 +5,10 @@ import  os
 
 path=os.getcwd()
 
-if os.path.exists(path+r'\Album'):
+if os.path.exists(path+r'/Album'):
     check=True
 else:
-    os.mkdir(path+r'\Album')
+    os.mkdir(path+r'/Album')
 
 
 def save(name_,img_):
@@ -31,7 +31,7 @@ if smile:
         name = st.text_input('Insert the images name...')
 
         if st.button('Save'):
-            if os.path.exists(f'{name}.txt'):
+            if os.path.exists(f'{name}.png'):
                 st.warning('The image has already been saved to the album!')
             else:
                 save(name,img)
@@ -39,3 +39,4 @@ if smile:
         st.warning(f'{ex}')
 else:
     st.warning('SMILE cannot be empty!')
+
