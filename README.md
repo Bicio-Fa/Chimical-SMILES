@@ -9,6 +9,7 @@ Album Management: Save your favorite molecules to a local folder (Album/) with c
 Error Handling: Validates SMILES entries and checks for duplicate names.
 
 Technologies Used:
+
 Python 3.12
 
 Streamlit: For the responsive web interface.
